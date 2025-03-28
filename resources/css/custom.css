@@ -1,0 +1,237 @@
+/* VARS */
+body {
+  --adw-primary: #01315f;
+  --adw-h1-background: #b0d377;
+  --adw-h2-background: #e3f0d2;
+  --uc-primary: #32475b;
+  --uc-secondary: #90c4eb;
+  --uc-ternary: #3e566c;
+  font-size: 28px;
+}
+
+/* RESET */
+b, strong {
+	font-weight: bold;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  font-size: 66%;
+}
+
+table * {
+  font-size: 90%;
+}
+
+/* box für img  PDF */
+
+.box {
+	position: relative;
+}
+
+.box img, .box svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/* logo and corporate design adjustments */
+#step-1 {
+	background-image: url("../../../_shared/resources/img/logos.png");
+	background-repeat: no-repeat;
+	/*background-position: right 0;
+	background-size: 3.8em;*/
+	background-position: right bottom;
+	background-size: 8em;
+}
+
+#step-1 h1 {
+	margin-right: 1.2em;
+	padding-left: .1em;
+	/* background-color: var(--adw-h1-background); */
+	color: var(--adw-primary);
+	/* background-image: linear-gradient(to right, var(--adw-h1-background), var(--uc-primary)); */
+  font-size: 92px;
+}
+
+#step-1 h2 {
+	position: relative;
+	z-index: -1;
+	margin-left: 1em;
+	padding-left: .1em;
+	/* background-color: var(--adw-h2-background); */
+	color: var(--uc-ternary);
+	/* background-image: linear-gradient(to right, var(--adw-h2-background), #3e546c); */
+}
+
+.step h2:first-child {
+	padding-left: .2em;
+	/* color: white; */
+	color: var(--adw-primary);
+	/* background-color: var(--adw-primary); */
+	/* background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-position: right .2em bottom -.2em;
+	background-size: 1.6em; */
+	/* background-image: linear-gradient(to right, var(--adw-primary), var(--uc-primary)); */
+}
+
+.step h2:first-child + h3 {
+	position: relative;
+	z-index: -1;
+	margin-right: 4em;
+	padding-left: 1em;
+	color: var(--uc-ternary);
+	/* background-color: var(--adw-h2-background);
+	background-image: linear-gradient(to right, var(--adw-h2-background), #3e546c); */
+}
+
+h1.red,
+li::before {
+	color: var(--uc-ternary);
+}
+
+.italics {
+  font-style: italic;
+}
+
+/* SIZE */
+.step:not(.centered) {
+	height: 75vh;
+	width: 75vw;
+}
+
+.logo {
+  height: 1em;
+  width: 1em;
+}
+
+.logo-horizontal {
+	height: .75em;
+	width: auto;
+}
+
+.manual-annotation.icon-after::after {
+	background-image: url("../img/unicode_1F4DD_emoji_memo.png");
+}
+
+.smaller {
+  font-size: 18px;
+  font-weight: initial;
+}
+
+.x-small {
+	font-size: 16px;
+	font-weight: initial;
+}
+
+.mfp-lightbox.small img {
+  width: 80%;
+}
+
+.mfp-title {
+  margin-top: .25em;
+}
+
+td, th {
+  font-size: smaller;
+  line-height: 1em;
+  padding: 0.2em;
+}
+
+thead th {
+  text-align: center;
+}
+
+td {
+  text-align: right;
+}
+
+tr.separator-after td, 
+tr.separator-after th,
+td.separator-after,
+th.separator-after {
+  border-bottom: .1em black solid;
+}
+
+td.separator-right,
+th.separator-right {
+	border-right: .1em black solid;
+}
+
+.highlight.secondary {
+  	background-color: lightblue;
+}
+
+.highlight.pro {
+  	background-color: lightgreen;
+}
+.highlight.con {
+  	background-color: lightpink;
+}
+.highlight.positive {
+	background-color: #9bbb59;
+	color: black;
+}
+.highlight.negative {
+	background-color: #c0504d;
+	color: white;
+}
+.highlight.neutral {
+	background-color: lightgrey;
+	color: black;
+}
+
+.grey {
+  color: grey;
+}
+
+li.pro::before {
+	content: "+";
+	font-weight: bold;
+  color: green;
+}
+
+li.con::before {
+	content: "–";
+	font-weight: bold;
+  color: red;
+}
+
+li.neutral::before {
+	content: "?";
+	font-weight: bold;
+  color: grey;
+}
+
+
+.positive {
+	color: #9bbb59;
+}
+
+.negative {
+  	color: #c0504d;
+}
+
+.dl-horizontal dt {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.dl-horizontal dd {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .dl-horizontal dt, .dl-horizontal dd {
+        width: 100%;
+        float: none;
+    }
+
+    .dl-horizontal dd {
+        padding-left: 1em;
+    }
+}

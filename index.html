@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tracking the Ups and Downs of Historical Lives | A Case Study on German Moravian
+      Memoirs</title>
+    <!-- meta information -->
+    <meta name="author" content="Patrick D. Brookshire" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- CSS reset and grid -->
+    <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+    <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+    <!-- fonts -->
+    <link
+      href="resources/css/fonts.css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+      rel="stylesheet" type="text/css" />
+    <!-- styles for included libraries -->
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+    <!-- standard presentation styles -->
+    <link href="resources/css/style.css" rel="stylesheet" />
+    <!-- custom presentation styles -->
+    <link href="resources/css/custom.css" rel="stylesheet" />
+    <!-- custom print styles -->
+    <link href="resources/css/print.css" rel="stylesheet" />
+    <!-- js needed in head -->
+    <!-- html5 dataset shim for IE -->
+    <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="fallback-message">
+      <p> Your browser <strong>doesn't support the features required</strong> by impress.mod.js, so
+        you are presented with a simplified version of this presentation. </p>
+      <p> For the best experience please use the latest <strong>Chrome</strong>,
+          <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+    </div>
+    <div id="impress">
+      <div class="step">
+        <h4><strong>28.03.2025</strong> | ZukunftsZentrumZollverein, Essen</h4>
+        <h4><strong>Words in Numbers</strong> Data-Driven Approaches to Texts in the Humanities and
+          Social Sciences</h4>
+        <h1 class="down-100">Tracking the Ups and Downs<br/>of Historical Lives</h1>
+        <h2 class="up-25">A Case Study on German Moravian Memoirs</h2>
+        <h5 class="down-100">
+          <strong><a href="https://orcid.org/0000-0002-5843-7577">Patrick D. Brookshire</a></strong>
+          | <img src="resources/img/Octicons-mark-github.svg" alt="Github" class="gh-icon" />
+            <a href="https://github.com/pdbro2k/" title="Me on GitHub">pdbro2k</a>
+          | <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+        </h5>
+      </div>
+      <div class="step">
+        <h2>Table of Contents</h2>
+        <ol class="line-height-one-five">
+          <li> Moravian Memoirs </li>
+          <li> Sentiment Analysis </li>
+          <li> Biography Segmentation </li>
+        </ol>
+      </div>
+      <div class="step">
+        <h1 class="red">01</h1>
+        <h2 class="line-height-one-five"> Moravian Memoirs </h2>
+      </div>
+      <div class="step">
+        <h2>Moravian Memoirs</h2>
+        <h3 class="up-25 after-25">Introduction</h3>
+        <div class="row">
+          <div class="six columns">
+            <h4>Moravians</h4>
+            <ul>
+              <li>one of the oldest Protestant denominations</li>
+              <li>emerged from 15th century movements</li>
+              <li>"renewed" by Count von Zinzendorf in 1727</li>
+            </ul>
+          </div>
+          <div class="six columns substep">
+            <h4>Moravian Memoirs</h4>
+            <ul>
+              <li><b>"semi-autobiographical"</b> sources <ul>
+                  <li>based on autobiographical notes</li>
+                  <li>composed by local church members</li>
+                </ul>
+              </li>
+              <li class="substep">"obligatory" since 1747</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Moravian Memoirs</h2>
+        <h3 class="up-25 after-50">Corpus</h3>
+        <div class="row">
+          <div class="six columns">
+            <h4>Sampling</h4>
+            <ul>
+              <li>Time frame: 1750-1850</li>
+              <li>Language: German</li>
+              <li>Datasources (89 memoirs): <ul>
+                  <li><a href="http://moravianlives.org/">Moravian Lives</a> (Bucknell
+                    University)</li>
+                  <li><a
+                      href="https://katiefaull.com/moravian-materials/umgang-mit-dem-heiland-lebenslaufe-bethlehemer-schwestern/"
+                      >Bethlehemer Schwestern</a> (K. Faull)</li>
+                  <li><a href="https://katiefaull.com/moravian-materials/moravian-mens-memoirs/"
+                      >Moravian Men’s Memoirs</a> (K. Faull)</li>
+                  <li><a href="http://bdhp.moravian.edu/personal_papers/memoirs/memoirs.html"
+                      >Bethlehem Digital History Project</a></li>
+                  <li class="grey">&gt; 300 more in the process of digitization</li>
+                </ul></li>
+              <li class="substep">Metadata: <ul>
+                  <li>year/place of birth</li>
+                  <li>year/place of death</li>
+                  <li>gender</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="six columns substep">
+            <h4>Distinct Features</h4>
+            <ul>
+              <li>emotionality <span class="small">(Van Gent, 2017; Faull and McGuire
+                2022)</span></li>
+              <li>mobility (due to missionary work) <div class="down-25">
+                  <div class="mfp-lightbox" style="margin-left: 5%;">
+                    <a href="resources/img/moravian-lives_map_birth-death.png"
+                      title="Places of Birth and Death (1750-2012) (moravian-lives.org)">
+                      <img src="resources/img/moravian-lives_map_birth-death.png"
+                        alt="Places of Birth and Death (1750-2012) (moravian-lives.org)" />
+                    </a>
+                  </div>
+                  <p class="x-small right"><a
+                      href="https://moravian.bucknell.edu/map/#movements/year_range/1750;2012"
+                      >Moravian Lives</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Moravian Memoirs</h2>
+        <h3 class="up-25 after-50">Structure</h3>
+        <blockquote>Memoirs typically [...] begin[...] with <span class="highlight">basic
+            biographical information</span>, <span class="highlight">birth</span>, and <span
+            class="highlight">early childhood experience</span>, followed by a description of <span
+            class="highlight">adolescence</span> into adulthood, then <span class="highlight"
+            >marriage</span>, <span class="highlight">occupation</span>, and <span class="highlight"
+            >middle adulthood</span>, followed lastly by <span class="highlight">later
+            adulthood</span> and <span class="highlight">death</span>. For those who died young or
+          unexpectedly, the final two sections may be different [...].
+          <!--However, even these memoirs
+          involve a final section including, illness, end of life, and death.--> This
+            <b>final section</b> was <b>often written by the choir helper</b>. <div
+            class="x-small right">McGuire (2021, 132)</div>
+        </blockquote>
+      </div>
+      <div class="step">
+        <h1 class="red">02</h1>
+        <h2 class="line-height-one-five"> Sentiment Analysis </h2>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Definition</h3>
+        <blockquote>the computational study of people’s opinions, appraisals, attitudes, and emotions toward entities, individuals, issues, events, topics and their attributes</blockquote>
+        <p class="x-small right">Liu and Zhang (2012, 415)</p>
+        <dl class="substep">
+          <dt>Types</dt>
+          <dd>
+            <ul>
+              <li class="grey">Binary Classification: <code class="positive">positive</code> vs.
+                  <code class="negative">negative</code></li>
+              <li>
+                <strong>Ternary Classification: <code class="positive">positive</code> vs.
+                    <code>neutral</code> vs. <code class="negative">negative</code></strong>
+              </li>
+              <li class="grey">Quaternary Classification: <code class="positive">positive</code> vs.
+                  <code>neutral</code> vs. <code class="negative">negative</code> vs.
+                  <code>mixed</code></li>
+              <li class="grey">Ordinal Classification: e.g. 1 to 5 stars</li>
+              <li class="grey">...</li>
+            </ul>
+          </dd>
+          <dt class="substep">Granularities</dt>
+          <dd class="substep">
+            <ul>
+              <li class="grey">documents</li>
+              <li>
+                <strong>sentences</strong>
+              </li>
+              <li class="grey">spans (of fixed length)</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Preprocessing | Sentence Tokenization</h3>
+        <div class="row">
+          <div class="six columns">
+            <h4>Transcription</h4>
+            <blockquote class="x-small"> 1779 Unser seliger Bruder {NAME} hat von seinem Lebens=lauf
+              folgendes aufgeschrieben. Ao 1773. den 14ten October bin ich geboren im Dorf
+              Burgenwald in der Grafschaft Jagerndorff in Ober Schlesien. Meine Eltern schickten
+              mich in die Schule daß ich gut lesen und schreiben und rechnen lernte, in meinem 14ten
+              Jahr lies mich mein Vater auch die Music lernen, zu meinem Schaden weil ich dadurch in
+              böse Gesellschaften kam und 8 Jahre in dem Wirtshaus zum tantz gespielet habe. ...
+            </blockquote>
+          </div>
+          <div class="six columns">
+            <h4><img src="resources/img/stanza.png" class="logo-horizontal" alt="stanza" /> &rarr;
+              Sentences</h4>
+            <ol class="x-small">
+              <li>1779 Unser seliger Bruder {NAME} hat von seinem Lebens=lauf folgendes
+                aufgeschrieben.</li>
+              <li>Ao 1773. den 14ten October bin ich geboren im Dorf Burgenwald in der Grafschaft
+                Jagerndorff in Ober Schlesien.</li>
+              <li>Meine Eltern schickten mich in die Schule daß ich gut lesen und schreiben und
+                rechnen lernte, in meinem 14ten Jahr lies mich mein Vater auch die Music lernen, zu
+                meinem Schaden weil ich dadurch in böse Gesellschaften kam und 8 Jahre in dem
+                Wirtshaus zum tantz gespielet habe.</li>
+              <li>...</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Manual Annotation</h3>
+        <ul>
+          <li>annotated <b>36</b>/89 memoirs (= <b>2210</b> sentences)</li>
+          <li class="substep">split into train/test datasets: <table class="down-25"
+              style="width: 50%;">
+              <thead>
+                <tr>
+                  <th rowspan="2">Class</th>
+                  <th colspan="3">Dataset</th>
+                </tr>
+                <tr>
+                  <th>Train (80%)</th>
+                  <th class="separator-right">Test (20%)</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th><code class="negative">negative</code></th>
+                  <td class="highlight con">485</td>
+                  <td class="highlight con separator-right">115</td>
+                  <td class="highlight con">600</td>
+                </tr>
+                <tr>
+                  <th><code>neutral</code></th>
+                  <td>523</td>
+                  <td class="separator-right">150</td>
+                  <td>673</td>
+                </tr>
+                <tr class="separator-after">
+                  <th><code class="positive">positive</code></th>
+                  <td class="highlight pro">760</td>
+                  <td class="highlight pro separator-right">177</td>
+                  <td class="highlight pro">937</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <td>1728</td>
+                  <td class="separator-right">442</td>
+                  <td>2210</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="substep">
+              <li>high degree of emotionality!</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Automatic Classification | Evaluation</h3>
+        <div class="row">
+          <div class="eight columns">
+            <table>
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Domain(s)</th>
+                  <th>Accuracy</th>
+                  <th>F1_weighted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="separator-after">
+                  <th>Random <img src="resources/img/unicode_1F3B2_emoji_game_die.png" class="logo"
+                      alt="dice" /></th>
+                  <td>--</td>
+                  <td class="highlight con">.34</td>
+                  <td>.34</td>
+                <tr>
+                <tr class="">
+                  <th>SentiWS <img src="resources/img/unicode_1F4DA_emoji_books.png" class="logo"/><br/><span class="x-small">(Remus et al., 2010)</span></th>
+                  <td>finance, reviews</td>
+                  <td>.34</td>
+                  <td class="highlight con">.18</td>
+                </tr>
+                <tr class="separator-after">
+                  <th>GerVADER <img src="resources/img/unicode_1F4DA_emoji_books.png" class="logo"
+                      alt="dictionary" /><br><span class="x-small">(Tymann et al.,
+                    2019)</span></th>
+                  <td>finance, product reviews, Social Media</td>
+                  <td>.59</td>
+                  <td>.58</td>
+                </tr>
+                <tr>
+                  <th>german-sentiment-bert <a
+                      href="https://huggingface.co/oliverguhr/german-sentiment-bert" target="_blank"
+                      class="small"><img src="resources/img/huggingface_logo-noborder.svg" class="logo" alt="huggingface"></a><br><span class="x-small">(Guhr et al.,
+                    2020)</span></th>
+                  <td>product reviews, Social Media</td>
+                  <td>.37</td>
+                  <td>.25</td>
+                </tr>
+                <tr class="separator-after">
+                  <th>multilingual-sentiment-bert <a
+                      href="https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment"
+                      target="_blank" class="small"><img
+                        src="resources/img/huggingface_logo-noborder.svg" class="logo"
+                        alt="huggingface" /></a></th>
+                  <td>product reviews</td>
+                  <td>.47</td>
+                  <td>.42</td>
+                </tr>
+                <tr class="substep">
+                  <th class="highlight">gbert* (fine-tuned)<br><span class="x-small">(Brookshire
+                      &amp; Reiter, 2024)</span></th>
+                  <td class="highlight">Moravian memoirs</td>
+                  <td class="highlight pro">.81</td>
+                  <td class="highlight pro">.81</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="four columns substep">
+            <h4>BERT Fine-tuning</h4>
+            <ul>
+              <li>
+                <code>transformers</code>
+                <img src="resources/img/huggingface_logo-noborder.svg" class="logo"
+                  alt="huggingface" />
+                <ul>
+                  <li class="grey">same DL architecture as current LLMs but non-generative!</li>
+                </ul>
+              </li>
+              <li>Parameters: defaults</li>
+              <li>Epochs: 3</li>
+              <li>Hardware: <b>T4 GPU</b></li>
+              <li>Duration: ~8min</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Sentiment Trendlines | Expectations</h3>
+        <blockquote>one would expect [...] polarity to <span class="highlight neutral">begin as
+            neutral</span> [...] as beginning content contains basic demographic facts. There should
+          then be a rising to a general <span class="highlight positive">positive peak in early
+            childhood</span> [...]. The positive peak should then <span class="highlight negative"
+            >fall through adolescence and young adulthood</span> [...] as people describe
+          challenging experiences. Positivity should then <span class="highlight positive">rise
+            slightly as people describe the conversion experience</span> and joining the church
+          [...]. <span class="highlight negative">As midlife and stability approaches, the polarity
+            should decrease some</span> from the conversion experience and testimonial section but
+          remain positive overall. [...] <span class="highlight positive">positive polarity [...]
+            should then rise sharply in a final peak</span> as people describe finding peace with
+          Christ and “going home”. <span class="highlight negative">Although illness generally also
+            occurs before death and has some negative component</span>, positive sentiment should
+          predominate as Moravians viewed this trial and experience as bringing them closer to
+          christ and a final positive outcome of the life journey. <div class="x-small right"
+            >McGuire (2021, 133)</div>
+        </blockquote>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Sentiment Trendlines</h3>
+        <div class="row">
+          <div class="four columns">
+            <h4>Expected Trendline</h4>
+            <div class="mfp-lightbox">
+              <a
+                href="resources/img/mcguire_2021_133_moravian-idealized_sentiment-trendline_annotated.png"
+                title="Idealized Moravian Memoir Sentiment Trendline">
+                <img
+                  src="resources/img/mcguire_2021_133_moravian-idealized_sentiment-trendline_annotated.png"
+                  alt="Idealized Moravian Memoir Sentiment Trendline" />
+              </a>
+            </div>
+            <p class="x-small right">based on McGuire (2021, 133)</p>
+          </div>
+          <div class="four columns substep">
+            <h4>Trendline (36 Memoirs, manual)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian36_sentiment-trendline_manual-annotation.png"
+                title="Sentiment Trendlines of the Manually Annotated Subcorpus">
+                <img src="resources/img/moravian36_sentiment-trendline_manual-annotation.png"
+                  alt="Sentiment Trendlines of the Manually Annotated Subcorpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+            <ul>
+              <li>normalized text lengths <ul>
+                  <li class="neutral">narrative vs. narrated time</li>
+                </ul></li>
+              <li class="substep">calculated mean polarities</li>
+              <li class="con substep">no early childhood peak</li>
+              <li class="pro substep">second half fits</li>
+            </ul>
+          </div>
+          <div class="four columns substep">
+            <h4>Trendline (36 Memoirs, gbert*)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian36_sentiment-trendline_gbert-finetuned.png"
+                title="Sentiment Trendlines Predicted by gbert* on Subcorpus">
+                <img src="resources/img/moravian36_sentiment-trendline_gbert-finetuned.png"
+                  alt="Sentiment Trendlines Predicted by gbert* on Subcorpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+            <ul>
+              <li class="pro">similar to manual labels</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Sentiment Trendlines | Upscaling</h3>
+        <div class="row">
+          <div class="four columns">
+            <h4>Expected Trendline</h4>
+            <div class="mfp-lightbox">
+              <a
+                href="resources/img/mcguire_2021_133_moravian-idealized_sentiment-trendline_annotated.png"
+                title="Idealized Moravian Memoir Sentiment Trendline">
+                <img
+                  src="resources/img/mcguire_2021_133_moravian-idealized_sentiment-trendline_annotated.png"
+                  alt="Idealized Moravian Memoir Sentiment Trendline" />
+              </a>
+            </div>
+            <p class="x-small right">based on McGuire (2021, 133)</p>
+          </div>
+          <div class="four columns">
+            <h4>Trendline (36 Memoirs, gbert*)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian36_sentiment-trendline_gbert-finetuned.png"
+                title="Sentiment Trendlines Predicted by gbert* on Subcorpus">
+                <img src="resources/img/moravian36_sentiment-trendline_gbert-finetuned.png"
+                  alt="Sentiment Trendlines Predicted by gbert* on Subcorpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+          </div>
+          <div class="four columns substep">
+            <h4>Trendline (<b>89</b> Memoirs, gbert*)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian89_sentiment-trendline_gbert-finetuned.png"
+                title="Sentiment Trendlines Predicted by gbert* on Full Corpus">
+                <img src="resources/img/moravian89_sentiment-trendline_gbert-finetuned.png"
+                  alt="Sentiment Trendlines Predicted by gbert* on Full Corpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+            <ul class="substep">
+              <li class="pro">early childhood peak</li>
+              <li class="neutral">midlife low less prevalent</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Sentiment Trendlines | Gender Differences</h3>
+        <div class="row">
+          <div class="four columns">
+            <h4>Expected Trendline</h4>
+            <div class="mfp-lightbox">
+              <a
+                href="resources/img/mcguire_2021_133_moravian-idealized_sentiment-trendline_annotated.png"
+                title="Idealized Moravian Memoir Sentiment Trendline">
+                <img
+                  src="resources/img/mcguire_2021_133_moravian-idealized_sentiment-trendline_annotated.png"
+                  alt="Idealized Moravian Memoir Sentiment Trendline" />
+              </a>
+            </div>
+            <p class="x-small right">based on McGuire (2021, 133)</p>
+          </div>
+          <div class="four columns">
+            <h4>Trendline (89 Memoirs, gbert*)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian89_sentiment-trendline_gbert-finetuned.png"
+                title="Sentiment Trendlines Predicted by gbert* on Full Corpus">
+                <img src="resources/img/moravian89_sentiment-trendline_gbert-finetuned.png"
+                  alt="Sentiment Trendlines Predicted by gbert* on Full Corpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+          </div>
+          <div class="four columns substep">
+            <h4>Trendline (89 Memoirs, gbert*)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian89_sentiment-trendlines-by-gender.png"
+                title="Sentiment Trendlines by Gender">
+                <img src="resources/img/moravian89_sentiment-trendlines-by-gender.png"
+                  alt="Sentiment Trendlines by Gender" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+            <ul>
+              <li>female (54), male (35)</li>
+              <li class="neutral substep">early childhood peak/low</li>
+              <li class="neutral substep">male midlife low</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Sentiment Analysis</h2>
+        <h3 class="up-25 after-50">Sentiment Trendlines | Gender Differences</h3>
+        <div class="row">
+          <div class="four columns">
+            <h4>Trendline (89 Memoirs, gbert*)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian89_sentiment-trendlines-by-gender_step15-highlighted.png" title="Sentiment Trendlines by Gender">
+                  <img src="resources/img/moravian89_sentiment-trendlines-by-gender_step15-highlighted.png" />
+              </a>
+            </div>
+            <ul>
+              <li>female (54), male (35)</li>
+            </ul>
+          </div>
+          <div class="four columns substep">
+            <h4>Relevant Words (Female, TF-IDF)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian89_sentiment-trendlines_step-15_top-tfidf_female.png" title="Most Relevant Words in Female Memoirs at Step 15">
+                  <img src="resources/img/moravian89_sentiment-trendlines_step-15_top-tfidf_female.png" />
+              </a>
+            </div>
+            <ul>
+              <li>Domains/Topics: <ul>
+                <li>Education</li>
+                <li>Health</li>
+                <li>Religious Initiation</li>
+                <li class="pro">Youth</li>
+              </ul></li>
+            </ul>
+          </div>
+          <div class="four columns substep">
+            <h4>Relevant Words (Male, TF-IDF)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian89_sentiment-trendlines_step-15_top-tfidf_male.png" title="Most Relevant Words in Male Memoirs at Step 15">
+                  <img src="resources/img/moravian89_sentiment-trendlines_step-15_top-tfidf_male.png" />
+              </a>
+            </div>
+            <ul>
+              <li>Domains/Topics: <ul>
+                <li>Travelling</li>
+                <li>War</li>
+                <li>Work</li>
+                <li class="pro">Youth</li>
+              </ul></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+      <div class="step">
+        <h1 class="red">03</h1>
+        <h2 class="line-height-one-five"> Biography Segmentation </h2>
+      </div>
+      <div class="step">
+        <h2>Biography Segmentation</h2>
+        <h3 class="up-25 after-25">Categorization Examples</h3>
+        <div class="row">
+          <div class="four columns">
+            <h4>Memoir Segments <span class="x-small">(McGuire 2021)</span></h4>
+            <ul>
+              <li>Demographic Facts</li>
+              <li>Birth</li>
+              <li>Early Childhood</li>
+              <li>Adolescence</li>
+              <li>Marriage</li>
+              <li>Occupation</li>
+              <li>Middle Adulthood</li>
+              <li>Later Adulthood</li>
+              <li>Death</li>
+            </ul>
+          </div>
+          <div class="four columns substep">
+            <h4>Life Phases</h4>
+            <ul>
+              <li>Early Childhood</li>
+              <li>Childhood</li>
+              <li>Adolescence</li>
+              <li>Early Adulthood</li>
+              <li>Adulthood</li>
+              <li>Late Adulthood</li>
+            </ul>
+          </div>
+          <div class="four columns substep">
+            <h4>Life Event Domains <span class="x-small">(Haehner et al. 2024)</span></h4>
+            <ul>
+              <li>Work</li>
+              <li>Education</li>
+              <li>Social <ul>
+                  <li>Family</li>
+                  <li>Romantic</li>
+                  <li>Other Social</li>
+                </ul></li>
+              <li>Leisure</li>
+              <li>Money</li>
+              <li>Health</li>
+              <li>Housing</li>
+              <li>Collective</li>
+              <li>Other <ul>
+                  <li>Religious/Spiritual</li>
+                  <li>Legal</li>
+                  <li>Other</li>
+                </ul></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Biography Segmentation | Event Domains</h2>
+        <h3 class="up-25 after-25">Manual Annotation</h3>
+        <ul>
+          <li>annotated the same <b>36</b>/89 memoirs (= <b>2210</b> sentences), again</li>
+          <li class="substep">split into train/test datasets: <table class="down-25"
+              style="width: 50%;">
+              <thead>
+                <tr>
+                  <th rowspan="2">Class</th>
+                  <th rowspan="2">Annotations</th>
+                  <th colspan="3">Dataset</th>
+                </tr>
+                <tr>
+                  <th>Train (80%)</th>
+                  <th class="separator-right">Test (20%)</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th><code class="highlight">birth</code></th>
+                  <td>31</td>
+                  <td class="highlight con">21</td>
+                  <td class="separator-right">10</td>
+                  <td class="highlight con">31</td>
+                </tr>
+                <tr class="substep">
+                  <th><code class="highlight secondary">work</code></th>
+                  <td>89</td>
+                  <td rowspan="2">89</td>
+                  <td rowspan="2" class="separator-right">17</td>
+                  <td rowspan="2">106</td>
+                </tr>
+                <tr class="substep">
+                  <th><code class="highlight secondary">education</code></th>
+                  <td>17&nbsp;</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>family</code></th>
+                  <td>78</td>
+                  <td>57</td>
+                  <td class="separator-right">21</td>
+                  <td>78</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>romantic</code></th>
+                  <td>61</td>
+                  <td>46</td>
+                  <td class="separator-right">15</td>
+                  <td>61</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>leisure</code></th>
+                  <td>39</td>
+                  <td>33</td>
+                  <td class="highlight con separator-right">6</td>
+                  <td>39</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>health</code></th>
+                  <td>175</td>
+                  <td>148</td>
+                  <td class="separator-right">27</td>
+                  <td>175</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>housing</code></th>
+                  <td>191</td>
+                  <td>149</td>
+                  <td class="separator-right">42</td>
+                  <td>191</td>
+                </tr>
+                <tr class="substep">
+                  <th><code class="highlight secondary">religious</code></th>
+                  <td>393</td>
+                  <td>319</td>
+                  <td class="separator-right">74</td>
+                  <td>393</td>
+                </tr>
+                <tr class="substep">
+                  <th><code class="highlight secondary">other_or_no_event</code></th>
+                  <td class="highlight pro">988</td>
+                  <td rowspan="5" class="highlight pro">839</td>
+                  <td rowspan="5" class="highlight pro separator-right">219</td>
+                  <td rowspan="5" class="highlight pro">1058</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>other_social</code></th>
+                  <td>49</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>money</code></th>
+                  <td>5</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>collective</code></th>
+                  <td>16</td>
+                </tr>
+                <tr class="substep">
+                  <th><code>legal</code></th>
+                  <td class="highlight con">0</td>
+                </tr>
+                <tr class="separator-after">
+                  <th><code class="highlight">death</code></th>
+                  <td>78</td>
+                  <td>67</td>
+                  <td class="separator-right">11</td>
+                  <td>78</td>
+                </tr>
+                <tr>
+                  <th>Total</th>
+                  <td>2210</td>
+                  <td>1728</td>
+                  <td class="separator-right">442</td>
+                  <td>2210</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
+      <div class="step">
+        <h2>Biography Segmentation | Event Domains</h2>
+        <h3 class="up-25 after-50">Automatic Classification | Evaluation</h3>
+        <div class="row">
+          <div class="eight columns">
+            <table>
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Accuracy</th>
+                  <th>F1_weighted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Random <img src="resources/img/unicode_1F3B2_emoji_game_die.png" class="logo"
+                      alt="dice" /></th>
+                  <td class="highlight con">.08</td>
+                  <td class="highlight con">.10</td>
+                </tr>
+                <tr class="separator-after">
+                  <th>Majority <code>no_or_other_event</code></th>
+                  <td>.50</td>
+                  <td>.33</td>
+                </tr>
+                <tr class="separator-after">
+                  <th>Inference Model: mDeBERTa-XNLI <a
+                      href="https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"
+                      target="_blank" class="small">
+                      <img src="resources/img/huggingface_logo-noborder.svg" class="logo"
+                        alt="huggingface logo" /></a><br><span class="x-small">(Laurer et al.,
+                      2022)</span></th>
+                  <td>.18</td>
+                  <td>.14</td>
+                </tr>
+                <tr class="substep">
+                  <th class="highlight">gbert* (fine-tuned)</th>
+                  <td class="highlight pro">.71</td>
+                  <td class="highlight pro">.71</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="four columns substep">
+            <h4>BERT Fine-tuning</h4>
+            <ul>
+              <li>
+                <code>transformers</code>
+                <img src="resources/img/huggingface_logo-noborder.svg" class="logo"
+                  alt="huggingface" />
+              </li>
+              <li>Parameters: defaults</li>
+              <li>Epochs: 5</li>
+              <li>Hardware: <b>T4 GPU</b></li>
+              <li>Duration: ~15min</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row substep">
+          <div class="four columns">
+            <div class="mfp-lightbox">
+              <a
+                href="resources/img/moravian_deu_event-domains10_confusion_gbert-finetuned_annotated.png"
+                title="Confusion Matrix of gbert Fine-tuned on Event Domains">
+                <img
+                  src="resources/img/moravian_deu_event-domains10_confusion_gbert-finetuned_annotated.png"
+                  alt="Confusion Matrix of gbert Fine-tuned on Event Domains" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Biography Segmentation | Event Domains</h2>
+        <h3 class="up-25 after-50">Trendlines | Upscaling</h3>
+        <div class="row">
+          <div class="four columns">
+            <h4>Trendline (36 Memoirs, manual)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian36_event-domain-trendline_manual-annotation.png"
+                title="Event Domain Trendlines of the Manually Annotated Subcorpus">
+                <img src="resources/img/moravian36_event-domain-trendline_manual-annotation.png"
+                  alt="Event Domain Trendlines of the Manually Annotated Subcorpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+          </div>
+          <div class="four columns">
+            <h4>Trendline (36 Memoirs, gbert*)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian36_event-domain-trendline_gbert-finetuned.png"
+                title="Event Domain Trendlines Predicted by gbert* on Subcorpus">
+                <img src="resources/img/moravian36_event-domain-trendline_gbert-finetuned.png"
+                  alt="Event Domain Trendlines Predicted by gbert* on Subcorpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+            <ul class="substep">
+              <li class="neutral">quite similar</li>
+              <li class="con">more <code>education_or_work</code></li>
+              <li class="con">more <code>family</code></li>
+              <li class="con">less <code>leisure</code></li>
+            </ul>
+          </div>
+          <div class="four columns substep">
+            <h4>Trendline (<b>89</b> Memoirs, gbert*)</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian89_event-domain-trendline_gbert-finetuned.png"
+                title="Event Domain Trendlines Predicted by gbert* on Full Corpus">
+                <img src="resources/img/moravian89_event-domain-trendline_gbert-finetuned.png"
+                  alt="Event Domain Trendlines Predicted by gbert* on Full Corpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+            <ul class="substep">
+              <li class="neutral"><code>romantic</code> later</li>
+              <li class="neutral"><code>health</code> later</li>
+              <li class="neutral"><code>religious</code> later</li>
+              <li class="neutral"><code>death</code> earlier</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Biography Segmentation | Event Domains</h2>
+        <h3 class="up-25 after-50">Gender Differences</h3>
+        <div class="row">
+          <div class="four columns substep">
+            <h4 class="">Sentiment Trendlines</h4>
+            <div class="mfp-lightbox">
+              <a
+                href="resources/img/moravian89_sentiment-trendlines-by-gender_step15-highlighted.png"
+                title="Sentiment Trendlines by Gender">
+                <img
+                  src="resources/img/moravian89_sentiment-trendlines-by-gender_step15-highlighted.png"
+                  alt="Sentiment Trendlines by Gender" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+          </div>
+          <div class="four columns substep">
+            <h4 class="highlight">Event Domains at Step 15</h4>
+            <div class="mfp-lightbox">
+              <a href="resources/img/moravian89_event-domains_step-15.png"
+                title="Event Domain Trendlines Predicted by gbert* on Full Corpus">
+                <img src="resources/img/moravian89_event-domains_step-15.png"
+                  alt="Event Domain Trendlines Predicted by gbert* on Full Corpus" />
+              </a>
+            </div>
+            <p class="x-small right"></p>
+          </div>
+          <div class="four columns substep">
+            <dl>
+              <dt>Female Domains</dt>
+              <dd>
+                <ul>
+                  <li>
+                    <code>family</code>
+                  </li>
+                  <li class="neutral">
+                    <code>romantic</code>
+                  </li>
+                  <li class="neutral">
+                    <code>leasure</code>
+                  </li>
+                </ul>
+              </dd>
+              <dt>Male Domains</dt>
+              <dd>
+                <ul>
+                  <li>
+                    <code>education_or_work</code>
+                  </li>
+                  <li>
+                    <code>health</code>
+                  </li>
+                  <li>
+                    <code>housing</code>
+                  </li>
+                  <li>
+                    <code>religious</code>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Conclusion</h2>
+        <h3 class="up-25 after-25"></h3>
+        <div class="row down-75">
+          <dl>
+            <dt>Computational Linguistics</dt>
+            <dd>
+              <ul>
+                <li class="pro">.7-.8 F1 scores (state-of-the-art) reachable with 1.8k fine-tuning
+                  instances <ul>
+                    <li>also for "complex" tasks like <b>Event Domains</b></li>
+                  </ul></li>
+              </ul>
+            </dd>
+            <dt>Religious Studies</dt>
+            <dd>
+              <ul>
+                <li class="pro">claims about features of Moravian memoirs quantitatively attestable <ul>
+                    <li>"Going Home" positively framed</li>
+                  </ul></li>
+              </ul>
+            </dd>
+            <dt>(Historical) Social Sciences</dt>
+            <dd>
+              <ul>
+                <li class="pro">gender differences inferrable <ul>
+                    <li>different domains at the beginning</li>
+                  </ul></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="step centered">
+        <div class="centered">
+          <h1>F I N I S</h1>
+          <h2>Thank you</h2>
+        </div>
+      </div>
+      <div class="step">
+        <h2>Literature</h2>
+        <ul class="smaller">
+          <li>Brookshire, Patrick D. and Reiter, Nils (2024). <a
+              href="https://aclanthology.org/2020.latechclfl-1.11/" target="_blank">"Modeling
+              Moravian Memoirs: Ternary Sentiment Analysis in a Low Resource Setting."</a> In:
+              <i>Proceedings of the 8th Joint SIGHUM Workshop on Computational Linguistics for
+              Cultural Heritage, Social Sciences, Humanities and Literature</i>, 91–100. </li>
+          <li>Faull, Katherine M. and McGuire, Michael A. (2022). <a
+              href="https://doi.org/10.5325/jmorahist.22.2.0125" target="_blank">"Analyzing Moravian
+              Feelings Using Computational Methods to Ask Questions about Norms and Sentiments in
+              Eighteenth-Century Moravian Lebensläufe."</a>
+            <i>Journal of Moravian History</i>, 22: 125–149.</li>
+          <li>Guhr, Oliver et al. (2020).
+            <a href="https://aclanthology.org/2020.lrec-1.202/" target="_blank">"Training a Broad-Coverage German Sentiment
+            Classification Model for Dialog Systems."</a> In:
+            <i>Proceedings of The 12th Language Resources and
+            Evaluation Conference</i>, 1620–1625</li>
+            <li>Haehner, Peter; Schaefer, Bernd; Brickau, Debora et al. (2024). <a
+              href="https://doi.org/10.1371/journal.pone.0314011" target="_blank">"The perception of
+              major life events across the life course."</a>
+            <i>PLoS ONE</i> 19 (12). </li>
+          <li>Laurer, Moritz; van Atteveldt, Wouter; Salleras Casas, Andreu et al. (2022). <a
+              href="https://osf.io/74b8k" target="_blank">"Less Annotating, More Classifying –
+              Addressing the Data Scarcity Issue of Supervised Machine Learning with Deep Transfer
+              Learning and BERT - NLI."</a> In: <i>Open Science Framework.</i> (Preprint). </li>
+          <li>Liu, Bing and Zhang, Lei (2012). <a href="https://doi.org/10.1007/978-1-4614-3223-4_13" target="_blank"
+              >"A Survey of Opinion Mining and Sentiment Analysis."</a> In: <i>Mining Text Data</i>, 415–463.</li>
+          </li>
+          <li>McGuire, Michael (2021). <i>"Computational Sentiment Analysis of an 18th Century
+              Corpus of Moravian English Memoirs."</i> Ph.D. thesis, Indiana University. </li>
+          <li>Remus, Robert; Quasthoff, Uwe and Heyer, Gerhard (2010).
+            <a href="http://www.lrec-conf.org/proceedings/lrec2010/" target="_blank">"SentiWS: A Publicly Available Germanlanguage Resource for Sentiment Analysis."</a> In:
+             <i>International Conference on Language Resources and
+            Evaluation</i>, 1168–1171.</li>
+          <li>Tymann, Karsten; Lutz, Matthias; Palsbröker, Patrick et al. (2019). "GerVADER: A
+            German Adaptation of the VADER Sentiment Analysis Tool for Social Media Texts." In:
+              <i>Proceedings of the Conference on "Lernen, Wissen, Daten, Analysen".</i>
+          </li>
+          <li>Van Gent, Jacqueline (2017). <a href="https://doi.org/10.1007/978-3-319-44185-6_12"
+              target="_blank">"Moravian Memoirs and the Emotional Salience of Conversion
+              Rituals."</a> In: <i>Emotion, Ritual and Power in Europe, 1200–1920: Family, State and
+              Church</i>, 241–260. </li>
+        </ul>
+        <h2>Software</h2>
+        <ul class="smaller">
+          <li>Qi, Peng; Zhang, Yuhao; Zhang, Yuhui et al. (2020). <a
+              href="https://nlp.stanford.edu/pubs/qi2020stanza.pdf" target="_blank">"Stanza: A
+              Python Natural Language Processing Toolkit for Many Human Languages."</a> In:
+              <i>Proceedings of the 58th Annual Meeting of the Association for Computational
+              Linguistics: System Demonstrations.</i>
+          </li>
+          <li>Wolf, Thomas; Debut, Lysandre; Sanh, Victor et al. (2020). <a
+              href="https://www.aclweb.org/anthology/2020.emnlp-demos.6" target="_blank"
+              >"Transformers: State-of-the-Art Natural Language Processing."</a> In: <i>Proceedings
+              of the Conference on Empirical Methods in Natural Language Processing: System
+              Demonstrations,</i> 38–45. </li>
+          <li>Waskom, Michael L. (2021). <a href="https://doi.org/10.21105/joss.03021"
+              target="_blank">"seaborn: statistical data visualization."</a>
+            <i>Journal of Open Source Software</i> 6 (60), 3021. </li>
+        </ul>
+      </div>
+    </div>
+    <!-- jquery -->
+    <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+    <!-- magnific popup -->
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+    <script src="resources/js/magnific-popup.lightbox.js"></script>
+    <!-- impress.mod.js -->
+    <script src="vendor/impress/impress.fork.js"></script>
+    <script src="vendor/impress/impress-slidenum.js"></script>
+    <script>
+            var obj = impress();
+            obj.init();
+            initSlideNo(obj);</script>
+  </body>
+</html>
